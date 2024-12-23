@@ -2,14 +2,14 @@ const express = require("express");
 const app = express();
 const { exec, execSync } = require('child_process');
 const port = process.env.SERVER_PORT || process.env.PORT || 7860;        
-const UUID = process.env.UUID || '986e0d08-b275-4dd3-9e75-f3094b36fa2a'; //若需要改UUID，需要在config.json里一致
-const NEZHA_SERVER = process.env.NEZHA_SERVER || 'nz.abc.cn';     
-const NEZHA_PORT = process.env.NEZHA_PORT || '5555';                     // 哪吒端口为{443,8443,2096,2087,2083,2053}其中之一开启tls
+const UUID = process.env.UUID || 'd6be5efe-3ff9-45a9-8ee6-f4158da73495'; //
+const NEZHA_SERVER = process.env.NEZHA_SERVER || '';     
+const NEZHA_PORT = process.env.NEZHA_PORT || '';                     //
 const NEZHA_KEY = process.env.NEZHA_KEY || '';
-const ARGO_DOMAIN = process.env.ARGO_DOMAIN || '';                       // 仅能使用token，argo端口8080，cf后台设置需对应
-const ARGO_AUTH = process.env.ARGO_AUTH || '';
-const CFIP = process.env.CFIP || 'government.se';
-const NAME = process.env.NAME || 'hug';
+const ARGO_DOMAIN = process.env.ARGO_DOMAIN || 'hf01.romanspinka.dedyn.io';                       //
+const ARGO_AUTH = process.env.ARGO_AUTH || 'eyJhIjoiOWE3ZTA5OTg0MTU3MTM2ZWI3MGNhYmZjY2VlMjg5YTciLCJ0IjoiZjQ0ZDBmMjMtNTUyMC00MDIxLTkzYmMtZjBjOGY4ZjM4OWQ5IiwicyI6Ik16QTVNelUyTVRNdE1tVTVaUzAwTTJZNUxUZzNaakF0TnpFNFptVmxaVEk1WTJZMyJ9';
+const CFIP = process.env.CFIP || 'time.is';
+const NAME = process.env.NAME || 'heny';
 
 // root route
 app.get("/", function(req, res) {
