@@ -1,9 +1,9 @@
 {
-  "name": "node-hug",
+  "name": "node",
   "version": "1.0.0",
   "description": "nodejs",
   "main": "index.js",
-  "author": "kusa",
+  "author": "",
   "license": "MIT",
   "private": false,
   "scripts": {
